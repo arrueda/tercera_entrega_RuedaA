@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP-final JavaScript</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<!--     Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link disabled">Disabled</a>
+                </div>
+            </div>
+        </div>
+
+<!--         Carrito de ventas -->
+<ul class="ms-md-auto">
+    <li class="submenu">
+            <img width="45" src="./img/miniCasaMuestra1.jfif" id="img-carrito">
+            <div id="carrito">
+                    
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Vendedor</th>                       
+                        <th scope="col">Precio</th>
+                        <th scope="col">Borrar</th>
+                      </tr>
+                    </thead>
+                    <tbody id="listaCasasCarrito">
+
+                    </tbody>
+                </table>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-secondary" id="vaciar-carrito">Vaciar Carrito</a>
+                  </div>
+    
+            </div>
+    </li>
+</ul>
+    </nav>
+
+    <h1>Sistema interactivo de autogestión inmobiliaria</h1>
+    <h3>Seleccione las viviendas de su mayor agrado y comuníquese con su vendedor.</h3>
+
+
+    <!-- Inmuebles en ventas -->
+    <div id="cardsInmuebles" class="container my-5">
+        <div class="row" id="insertDOMcontent">
+            <!-- <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>           
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+
+
+    
+    <script src="js/stock.js"></script>
+</body>
+</html>
